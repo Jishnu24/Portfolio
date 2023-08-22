@@ -190,9 +190,7 @@ body {
     flex-wrap: wrap;
 }
 
-#page1 #left{
 
-}
 
 /* my page 2 code end */
 
@@ -394,10 +392,12 @@ body {
 .c1 {
     height: 12vw;
     width: 12vw;
+    text-decoration: none;
 }
 
 .c1>i {
     font-size: 80px;
+    transform: rotate(-180deg);
 }
 
 #text5 {
@@ -544,7 +544,10 @@ body {
     align-items: center;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
+    position: relative;
 }
+
+
 
 .img{
     width: 90px;
@@ -557,6 +560,7 @@ body {
     align-items: center;
 }
 
+
 .skill-title h3{
     color:#000;
     margin: 0.5rem;
@@ -564,4 +568,109 @@ body {
 
 .skill-icon{
     width: 50px;
+    z-index: 2;
 }
+
+
+/* contact page */
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: #2b2b2b;
+}
+.container2 {
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
+  
+  .row  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 40px;
+    width: 70vw;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 100px;
+    background-color: #fff;
+  }
+  
+  .contact-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .contact-form .input-box input,
+  .contact-form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    background-color: #fff;
+  
+  }
+  
+  .contact-form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  
+  .contact-form .input-box input:focus ~ span,
+  .contact-form .input-box textarea:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  
+  .contact-form .input-box input[type="submit"]
+  {
+    width: 50%;
+    background: #3498db;
+    color: #FFF;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    transition: 0.5s;
+    border-radius: 50px;
+    position: relative;
+    /* top: 80%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .contact-form .input-box input[type="submit"]:hover
+  {
+    background: white;
+    color: #00bcd4;
+  }
